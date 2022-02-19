@@ -4,6 +4,7 @@
   --third-color: #5d87a8;
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Montserrat", sans-serif;
+  --box-shadow: 0px 0px 47px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero {
@@ -101,6 +102,9 @@ hr {
 .project-links:hover {
   border: 1px solid var(--third-color);
   background-color: var(--third-color);
+}
+.project-img {
+  box-shadow: var(--box-shadow);
 }
 
 @media (max-width: 1200px) {
