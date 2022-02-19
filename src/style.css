@@ -8,14 +8,21 @@
   --box-shadow: 0px 0px 47px 15px rgba(0, 0, 0, 0.2);
 }
 /* index page */
-
+.navbar {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+.nav-link {
+  font-family: var(--secondary-font);
+  font-weight: 900;
+}
 .hero {
   background: linear-gradient(
     180deg,
     var(--primary-color) 0%,
     rgba(250, 250, 250, 0) 100%
   );
-  padding: 160px 20px;
+  padding: 100px 20px;
 }
 .profile-pic {
   display: block;
@@ -118,7 +125,7 @@ hr {
 
 .container.intro {
   max-width: 80%;
-  padding: 160px 20px 20px;
+  padding: 100px 20px 20px;
 }
 
 .container.intro.work h1,
