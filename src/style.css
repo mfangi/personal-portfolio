@@ -115,11 +115,12 @@ hr {
 
 /* about me page */
 
-.container.about-me {
+.container.intro {
   max-width: 80%;
   padding: 160px 20px 20px;
 }
 
+.container.intro.work h1,
 .about-me.description h1,
 .about-me.description h3 {
   text-align: left;
@@ -145,6 +146,20 @@ hr {
   width: 460px;
 }
 
+/* work page */
+.card-title {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: bold;
+}
+.card-text {
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+.card {
+  display: block;
+  margin: 0 auto;
+}
 /* media queries */
 @media (max-width: 1200px) {
   h1,
