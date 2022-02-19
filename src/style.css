@@ -1,10 +1,62 @@
-body {
-  background-color: goldenrod;
+:root {
+  --primary-color: #f8f2ff;
+  --secondary-color: #af49ff;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+.hero {
+  background: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    rgba(250, 250, 250, 0) 100%
+  );
+  padding: 160px 20px;
+}
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
 }
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--primary-font);
   font-weight: bold;
+  text-align: center;
+  font-size: 96px;
+}
+h2 {
+  font-family: var(--primary-font);
+  text-align: center;
+  line-height: 2;
 }
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--secondary-font);
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navigation-links {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  transition: all 1ms ease-in-out;
+}
+
+.navigation-links a:hover {
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  background-color: white;
 }
