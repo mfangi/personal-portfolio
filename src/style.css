@@ -176,6 +176,9 @@ hr {
   background-color: var(--third-color);
   text-transform: capitalize;
 }
+.netlify-link:hover {
+  background-color: var(--secondary-color);
+}
 .card-img-overlay {
   opacity: 0;
   color: black;
@@ -199,6 +202,24 @@ hr {
 
 .contact-details {
   text-align: center !important;
+}
+
+.footer {
+  background-color: var(--fourth-color);
+  color: var(--third-color);
+  padding: 60px 48px;
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 18px;
+}
+
+.footer a {
+  font-size: 18px;
+}
+
+.footer a:hover,
+.contact-links:hover {
+  color: var(--secondary-color);
 }
 
 /* media queries */
