@@ -193,14 +193,18 @@ hr {
   font-size: 24px;
 }
 .container.intro.contact {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-details {
+  text-align: center !important;
 }
 
 /* media queries */
 @media (max-width: 1200px) {
   h1,
-  .about-me.description h1,
-  .container.intro.work h1 {
+  .about-me.description h1 {
     font-size: 48px;
   }
   h2,
@@ -221,11 +225,13 @@ hr {
   .about-me.description h3 {
     text-align: center;
   }
-  .project-dscription h2 {
+  .project-dscription h2,
+  .container.intro.work h1 {
     text-align: center;
     font-size: 34px;
   }
-  .project-links {
+  .project-links,
+  .contact-links {
     display: flex;
     justify-content: center;
   }
