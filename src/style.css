@@ -2,6 +2,7 @@
   --primary-color: #f8f2ff;
   --secondary-color: #af49ff;
   --third-color: #5d87a8;
+  --fourth-color: #e7eff4;
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Montserrat", sans-serif;
   --box-shadow: 0px 0px 47px 15px rgba(0, 0, 0, 0.2);
@@ -160,10 +161,28 @@ hr {
   display: block;
   margin: 0 auto;
 }
+
+.netlify-link {
+  display: flex;
+  justify-content: center;
+  border: var(--third-color);
+  background-color: var(--third-color);
+  text-transform: capitalize;
+}
+.card-img-overlay {
+  opacity: 0;
+  color: black;
+  transition: all 4ms ease-in-out;
+}
+.card-img-overlay:hover {
+  opacity: 1;
+  background-color: #e7eff4ef;
+}
 /* media queries */
 @media (max-width: 1200px) {
   h1,
-  .about-me.description h1 {
+  .about-me.description h1,
+  .container.intro.work h1 {
     font-size: 48px;
   }
   h2,
@@ -174,7 +193,8 @@ hr {
   hr {
     display: none;
   }
-  .navigation-links a {
+  .navigation-links a,
+  .card-img-overlay {
     font-size: 14px;
   }
   .project-dscription,
