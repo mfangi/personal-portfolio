@@ -6,6 +6,7 @@
   --secondary-font: "Montserrat", sans-serif;
   --box-shadow: 0px 0px 47px 15px rgba(0, 0, 0, 0.2);
 }
+/* index page */
 
 .hero {
   background: linear-gradient(
@@ -76,6 +77,11 @@ hr {
   font-size: 24px;
 }
 
+.shecodes {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 .project-dscription h2 {
   font-family: var(--primary-font);
   font-size: 64px;
@@ -107,12 +113,47 @@ hr {
   box-shadow: var(--box-shadow);
 }
 
+/* about me page */
+
+.container.about-me {
+  max-width: 80%;
+  padding: 160px 20px 20px;
+}
+
+.about-me.description h1,
+.about-me.description h3 {
+  text-align: left;
+  font-size: 64px;
+  font-family: var(--primary-font);
+}
+
+.about-me.description h2 {
+  text-align: left;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+}
+
+.about-me.description p {
+  text-align: left;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  margin: 0;
+}
+
+.about-me.img {
+  width: 460px;
+}
+
+/* media queries */
 @media (max-width: 1200px) {
-  h1 {
+  h1,
+  .about-me.description h1 {
     font-size: 48px;
   }
   h2,
-  h3 {
+  h3,
+  .about-me.description h3 {
     font-size: 24px;
   }
   hr {
@@ -121,7 +162,10 @@ hr {
   .navigation-links a {
     font-size: 14px;
   }
-  .project-dscription {
+  .project-dscription,
+  .about-me.description h1,
+  .about-me.description h2,
+  .about-me.description h3 {
     text-align: center;
   }
   .project-dscription h2 {
@@ -132,9 +176,12 @@ hr {
     display: flex;
     justify-content: center;
   }
-  .project-img {
-    max-width: 75%;
-    margin-top: 100px;
-    margin-left: 50px;
+  .about-me.img {
+    display: block;
+    margin: 0 auto;
+  }
+  .about-me.description p {
+    text-align: center;
+    margin-right: 0 !important;
   }
 }
