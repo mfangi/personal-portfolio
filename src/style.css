@@ -22,7 +22,7 @@
     var(--primary-color) 0%,
     rgba(250, 250, 250, 0) 100%
   );
-  padding: 100px 20px;
+  padding: 40px 20px;
 }
 .profile-pic {
   display: block;
